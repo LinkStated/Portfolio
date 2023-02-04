@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Torres│CV </title>
+    <link rel="icon" href="Iconos\Icono.ico">
+    <link rel="stylesheet" href="proyecto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital,wght@1,900&family=Sevillana&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lilita+One&family=Roboto:ital,wght@1,900&family=Sevillana&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+<body>
+
+<section class="showcase">
+        
+        <div class="video-container">
+    
+            <video autoplay muted loop id="mivideo">
+                <source src="1.mp4" type="video/mp4" alt="Diego Torres">
+                <source src="1.ogg" type="video/ogg" alt="Diego Torres">
+                Tu navegador no soporta el Archivo de video 
+            </video>
+            <div class="container1">
+               <h1>Soy Diego Torres</h1> 
+            </div>
+         <div class="container">
+           <img src="2.jpeg" alt="Foto"/>
+         </div>
+        </div>
+
+</section>
+
+    <div class="grid-container">
+        <ul id="menu">
+            <li class="li" id="li1" onmouseover="changeColor(this)" onmouseout="originalColor(this)">Sobre mi</li> 
+            <li class="li" id="li2" onmouseover="changeColor(this)" onmouseout="originalColor(this)">Habilidades</li>
+            <li class="li" id="li3" onmouseover="changeColor(this)" onmouseout="originalColor(this)">Proyectos</li>
+            <li class="li" id="li4" onmouseover="changeColor(this)" onmouseout="originalColor(this)">Contacto</li>
+        </ul>
+    </div>  
+
+    <div class="grid-container-1">
+        
+        <div id="box-1">
+            <h2>Sobre mi</h2>
+            <p>¡Hola! Soy Diego Torres. Tengo 20 años. Actualmente vivo en San Juan Argentina. Tengo estudios en el Instituto de Inglés Saint Thomas y me recibí como 'Técnico Electromecánico' en la E.I.D.F.S en el año 2020. Tengo 2 años cursados en la carrera de Arquitectura y Urbanismo en la UNSJ. Iniciando en el mundo de la programación, mas específicamente en el Desarrollo Front End.</p>
+            <p>Personalmente creo que tengo un buen nivel de creatividad y un alto nivel de manejo de herramientas digitales.</p>
+            <p>Tengo como objetivo el acumular el suficiente conocimiento en el ámbito de la programación como para poder dejar mi marca en la Web y llegar a un buen ambiente profesional.</p>
+        </div>
+        
+        <div id="box-2">
+            <h2>Habilidades</h2> 
+            <div class="Habilidades">
+                <div class="caja-izquierda"><h3 class="caja-frontend">Front End</h3>
+                    <iframe class="item2" src="Iconos/HTML.svg" frameborder="dadada"></iframe>
+                    <iframe class="item4"src="Iconos/CSS.svg" frameborder=""></iframe>
+                    <iframe class="item6"src="Iconos\JavaScript.svg" frameborder=""></iframe>
+                    <iframe class="item8"src="Iconos/Bootstrap.svg" frameborder=""></iframe>
+
+                    <h4 class="item3">HTML</h4>
+                    <h4 class="item5">CSS</h4>
+                    <h4 class="item7">JavaScript</h4>
+                    <h4 class="item9">Bootstrap</h4>
+
+                </div>
+                <div class="caja-derecha"><h3 class="caja-diseño">Diseño</h3>
+                    <iframe class="item2-" src="Iconos/AI.svg" frameborder=""></iframe>
+                    <iframe class="item4-" src="Iconos/Photoshop.svg" frameborder=""></iframe>
+                    <iframe class="item6-" src="Iconos/Canva.svg" frameborder=""></iframe>
+
+                    <h4 class="item3-">AdobeIllustrator</h4>
+                    <h4 class="item5-">Photoshop</h4>
+                    <h4 class="item7-">Canva</h4>
+
+                </div>
+            </div>    
+        </div> 
+       
+        <div id="box-3">
+            <h2>Proyectos</h2>
+            <h5 id="proyecto">PRÓXIMAMENTE</h5>
+            <h5 id="wave">PRÓXIMAMENTE</h5>
+     
+        </div> 
+        
+        <div id="box-4">
+            <div id="wrapper">
+                <h2>Contacto</h2>
+                <form action="https://formsubmit.co/3d9d1b14c0bc287150b05371eb51c67d" method="POST">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="name">
+        
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" name="email">
+        
+                    <label for="subject">Asunto</label>
+                    <input type="text" name="subject">
+        
+                    <label for="comments">Comentario</label>
+                    <textarea name="comments"  cols="15" rows="5"></textarea>
+        
+                    <input type="submit" value="Enviar Mensaje">
+        
+                    <input type="hidden" name="_next" value="http://127.0.0.7:5500/Proyecto-Final/proyecto.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+        
+            </div>      
+        </div>     
+
+    </div>
+
+</body>
+
+<script src="proyecto.js"></script>
+
+</html>

@@ -1,0 +1,465 @@
+
+html{
+    width: 100vw;
+}
+
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: normal ;
+    min-height: 100vh;
+                height: 100vh;
+                background: linear-gradient(45deg,#C1DDE7 ,#ACCFDB,white,black);
+                background-size: 1000% 1000%;
+                animation: cambiar 10s ease-in-out infinite;
+}
+
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+.showcase{
+    left: 0;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid gray;
+    object-fit: cover;
+    object-position: center;
+    float: left;
+    box-shadow: -10px 5px 5px black;
+}
+
+.container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 78vh;
+        top: 0;
+        left: 0;
+}            
+
+.container1{
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    height: 78vh;
+    top: 0;
+    left: 0;
+    text-align: center;
+    float: right;
+    margin: 0 auto;
+}
+
+
+#mivideo {
+    width: 105vw;
+    height: 80%;
+    object-fit: cover;
+    z-index: -100;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(0,0,0,0.75)rgba(0,0,0,0.75));
+    background-size: cover;
+}
+
+
+h1{
+    font-family: "Fredoka One";
+    color: burlywood;
+    font-size: 5vw;
+}
+
+h2{
+    font-family:"Fredoka One";
+    color: #AA503E;
+    font-size: 4vw;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(-10px 2px 8px  #4352CD );
+}
+
+h3{
+    font-family:"Fredoka One";
+    font-size: 3vw;
+}
+
+h4{
+    font-family:"Fredoka One";
+    font-size: 2vw;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    margin: 2vh;
+    font-size: x-large;
+
+}
+
+
+#menu {
+    display: flex;
+    width: 100vw;
+    background-color: #35B4AF;
+}
+#menu li {
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2vw;
+}
+
+.grid-container {
+    display: inline ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    z-index: 1;
+  }
+  
+.li {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-family:"Lilita One ";
+
+}
+
+.grid-container-1{ 
+    display: grid;   
+    top: 8vh;
+    position: relative;
+    left: 1vh;
+}
+
+#box-1{
+    background-color: lightskyblue;
+    margin: 2vh;
+    box-shadow: -15px 10px 5px gray;
+    width: 96vw;
+}
+
+#box-2{
+    background-color: #C5D162;
+    margin: 2vh;
+    box-shadow: -15px 10px 5px gray;
+    width: 96vw;
+
+}
+
+#box-3{
+    background-color: lightskyblue;
+    margin: 2vh;
+    box-shadow: -15px 10px 5px gray;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 96vw;
+
+}
+
+#box-4{
+    background-color: #C5D162;
+    margin: 2vh;
+    box-shadow: -15px 10px 5px gray;
+    width: 96vw;
+
+}
+
+
+.Habilidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.caja-izquierda {
+    display: grid;
+    grid-template-columns:  auto auto;
+    
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+iframe{
+    overflow: hidden;
+    width: 12vw;
+    height: 9vw;
+
+}
+
+.caja-frontend{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+.item2{
+    grid-column-start:1 ;
+    grid-column-end:1 ;
+    grid-row-start:2 ;
+    grid-row-end:2 ;
+}
+
+
+.item3{
+    grid-column-start:2 ;
+    grid-column-end:2 ;
+    grid-row-start:2 ;
+    grid-row-end:2 ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.item4{
+    grid-column-start:1 ;
+    grid-column-end:1 ;
+    grid-row-start:3 ;
+    grid-row-end:3 ;
+}
+
+.item5{
+    grid-column-start:2 ;
+    grid-column-end:2 ;
+    grid-row-start:3 ;
+    grid-row-end:3 ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.item6{
+    grid-column-start:1 ;
+    grid-column-end:1 ;
+    grid-row-start:4 ;
+    grid-row-end:4 ;
+}
+
+.item7{
+    grid-column-start:2 ;
+    grid-column-end:2 ;
+    grid-row-start:4 ;
+    grid-row-end:4 ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.item8{
+    grid-column-start:1 ;
+    grid-column-end:1 ;
+    grid-row-start:5 ;
+    grid-row-end:5 ;
+}
+
+.item9{
+    grid-column-start:2 ;
+    grid-column-end:2 ;
+    grid-row-start:5 ;
+    grid-row-end:5 ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.caja-derecha {
+    display: grid;
+    grid-template-columns:  auto auto;
+    flex-direction: column;
+   
+    text-align: right;
+    justify-content: left;
+    
+
+}
+
+.caja-diseño{
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+.item2-{
+    grid-column-start:1 ;
+    grid-column-end:1 ;
+    grid-row-start:2 ;
+    grid-row-end:2 ;
+}
+
+
+.item3-{
+    grid-column-start:2 ;
+    grid-column-end:2 ;
+    grid-row-start:2 ;
+    grid-row-end:2 ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.item4-{
+    grid-column-start:1 ;
+    grid-column-end:1 ;
+    grid-row-start:3 ;
+    grid-row-end:3 ;
+}
+
+.item5-{
+    grid-column-start:2 ;
+    grid-column-end:2 ;
+    grid-row-start:3 ;
+    grid-row-end:3 ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.item6-{
+    grid-column-start:1 ;
+    grid-column-end:1 ;
+    grid-row-start:4 ;
+    grid-row-end:4 ;
+}
+
+.item7-{
+    grid-column-start:2 ;
+    grid-column-end:2 ;
+    grid-row-start:4 ;
+    grid-row-end:4 ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#proyecto{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+
+}
+
+h5{
+    font-size: 8vw;
+    grid-column-start:1 ;
+    grid-column-end:1 ;
+    grid-row-start:2 ;
+    grid-row-end:2 ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+
+}
+
+#proyecto{
+    color: black;
+    text-shadow: -1px -1px 0 black,1px -1px 0 black, 1px 1px 0 black, -1px 1px 0 black;
+    
+}
+
+#wave{
+    color: #09f;
+    animation: wave 3s ease-in-out infinite;
+}
+
+@keyframes wave{
+    0%, 100%{
+        clip-path: polygon(
+            0% 47%,
+            10% 48%,
+            33% 54%,
+            54% 60%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+    }
+    50%{
+        clip-path: polygon(
+            0% 60%,
+            15% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+        );
+    }
+}
+
+
+#wrapper {
+   width: 50%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 20px;
+   text-align: center;
+   font-family: Arial, sans-serif;
+   background-color: yellow;
+   box-shadow: -15px 10px 5px gray;
+}
+  form {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-family:"Fredoka One";
+  }
+  
+  input[type="text"], input[type="email"], input[type="subject"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: xx-large;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #555;
+  }
+
+footer{
+    background-color: gray;
+    position: absolute;
+    width: 100vw;
+    height: 5vw;
+    bottom: -1;
+}
+
+
+
+
